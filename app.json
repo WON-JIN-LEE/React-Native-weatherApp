@@ -27,6 +27,8 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "Learning React Native by Building a Weather App\n",
+    "githubUrl": "https://github.com/WON-JIN-LEE/React-Native-weatherApp"
   }
 }

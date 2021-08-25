@@ -1,12 +1,13 @@
 import React from "react";
 import { StyleSheet, Text, View } from 'react-native';
+import { LinearGradient } from 'expo-linear-gradient';
 
-
+// 로딩 Activity 
 export default function Loading() {
     return (
-        <View style= {styles.container}>
+            <LinearGradient style={styles.container} colors={["#605C3C","#3C3B3F"]}>
             <Text style={styles.text}>Getting the real-time Weather</Text>
-        </View>
+            </LinearGradient>
     );
 }
 
@@ -14,12 +15,11 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         justifyContent: 'flex-end',
-        paddingHorizontal: 30,
-        paddingVertical: 100,
-        backgroundColor: "#059669"
+        paddingHorizontal: 40,
+        paddingVertical: 140,
     },
     text: {
-        color: "#2c2c2c",
+        color: "#fff",
         fontSize: 30,
     }
-})
+});
