@@ -89,7 +89,7 @@ const weatherOptions = {
 };
 
 // Weather Activity
-export default function Weather({temp, condition}) {
+export default function Weather({temp, condition, city}) {
     return (
         <LinearGradient
             style={styles.container}
@@ -108,6 +108,7 @@ export default function Weather({temp, condition}) {
 
             {/* 두가지 스타일 적용 */}
             <View style={{ ...styles.halfContainer, ...styles.textContainer }}>
+                <Text style={styles.title}>{city}</Text>
                 <Text style={styles.title}>{weatherOptions[condition].title}</Text>
                 <Text style={styles.subtitle}>{weatherOptions[condition].subtitle}</Text>
             </View>
@@ -166,5 +167,5 @@ const styles = StyleSheet.create({
         paddingHorizontal: 30,
         justifyContent: "center",
         flex: 1
-    }
+    },
 });
